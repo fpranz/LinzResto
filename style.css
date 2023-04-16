@@ -1,0 +1,416 @@
+/*whole html body files*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  background: #1b1c1e;
+}
+/*All Sidenav in every files*/
+#sidenav {
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  background: #161922;
+  left: -200px;
+  transition: .5s;
+}
+
+#sidenav.active {
+  left: 0;
+}
+
+#sidenav ul li a {
+  display: block;
+  padding: 24px;
+  color: #eee;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 22px;
+  border-bottom: 2px solid #555;
+}
+
+#sidenav ul li a:hover{
+  background-color: chartreuse;
+  color: blue;
+}
+
+#sidenav .toggle-btn {
+  position: absolute;
+  top: 20px;
+  left: 220px;
+}
+
+.toggle-btn span {
+  width: 45px;
+  height: 5px;
+  background: #eee;
+  display: block;
+  margin-top: 4px;
+}
+
+/*Home page*/
+.header{
+  width: auto;
+  height: 250px;
+  padding-top: 70px;
+  color:#eee;
+  font-family: Constalia;
+  font-size: 36px;
+  text-align: center;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+p{
+  font-size: 16px;
+}
+
+.container{
+  width: auto;
+  height:100%;
+  background: #161922;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper{
+  width: 70%;
+  height: 487px;
+  border:0px;
+}
+
+.swiper-slide img{
+  width: 100%;
+  padding-top: 15px;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+  color: white;
+}
+
+.swiper .swiper-pagination-bullet-active{
+  background: white;
+}
+
+/*Menu class*/
+.container1 {
+  max-width: max-content;
+  max-height: max-content;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 20px;
+  background-color: #161922;
+}
+
+.menu {
+  font-family: georgia;
+  font-size: 16px;
+  color: #eee;
+}
+
+.menu h1 {
+  font-size: 50px;
+}
+
+.menu-group-heading {
+  margin: 0px;
+  padding-left: 90px;
+  padding-top: 20px;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #ccc;
+  font-size: 30px;
+  font-family:Verdana;
+}
+
+.menu-group {
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.menu-item {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px; 
+}
+
+.menu-item-image {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1em;
+}
+
+.menu-item-text {
+  flex-grow: 1;
+}
+
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-item-name{
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  font-family:cursive;
+  font-size: 24px;
+}
+
+/*About page*/
+.about {
+  max-width: 100%;
+  height: 657px;
+  background-color: #161922;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .content img {
+  height: 450px;
+  width: 430px;
+  max-width: 100%;
+  border-radius: 60px;
+}
+
+.text {
+  width: 550px;
+  max-width: 100%;
+  padding: 0 10px;
+}
+
+.content {
+  width: 1280px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text h1 {
+  color: #ffcc74;
+  font-size: 85px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.text h5 {
+  color: #eee;
+  font-size: 25px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.text p {
+  color: #c0c4d6;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 1.5px;
+  margin-bottom: 45px;
+}
+
+/*Contact Us*/
+.container9 {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.container9 h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  color: #eee;
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.container9 p {
+  color: #d2d2d2;
+  text-align: center;
+}
+
+.container9 p, input, textarea, label {
+  font-family: 'Poppins', sans-serif;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px 0;
+}
+
+.container9 input, textarea, label {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  color: #eee;
+}
+
+.container9 input, textarea {
+  background-color: transparent;
+  border: 0;
+  color: #eee;  
+  border-bottom: 2px solid #828282;
+}
+
+.container9 input[type = text], form input::placeholder, select{
+  color: #eee;
+}
+
+.container9 input[type=submit] {
+  background-color: #545557;
+  padding: 15px 0;
+  color: #eee;
+  font-size: 18px;
+  border-bottom: none;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.container9 input[type=submit]:hover {
+  background: #eee;
+  color: #eee;
+}
+
+.container9 input, textarea {
+  color: #eee;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.container9 input:focus, textarea:focus {
+  outline: 1px solid #828282;
+}
+
+.container9 a {
+  color: #828282;
+  font-style: italic;
+}
+
+.container9 a:hover {
+  color: #fff;
+}
+
+/*For the footer*/
+.footer {
+  background-color: #161922;
+  padding: 0px;
+  padding-top: 100px;
+}
+
+.footer p {
+  font-size: 24px;
+  text-align: center;
+  color: #eee;
+}
+
+.footer .inner-footer {
+  margin: 0;
+  padding: 0;
+}
+
+.footer .social-links, .social-links ul {
+  padding: 10px;
+  display: flex;
+  margin: auto;
+}
+
+.footer .social-items {
+  list-style: none;
+}
+
+.footer .social-items a {
+  padding: 10px 20px;
+  font-size: 35px;
+  color: #6cccc6;
+  transition: all .25s;
+}
+
+.footer .social-items a:hover {
+  color: #54a39e;
+}
+
+.footer .quick-links, .quick-links ul {
+  display: flex;
+  margin: auto;
+  padding-bottom: 7px;
+}
+
+.footer .quick-items {
+  list-style: none;
+}
+
+.footer .quick-items a {
+  text-decoration: none;
+  padding: 0px 15px;
+  font-size: 20px;
+  color: #eee;
+  transition: all .25s;
+}
+
+.footer .quick-items a:hover {
+  color: #6cccc6;
+}
+
+.footer .outer-footer {
+  padding: 10px;
+  text-align: center;
+  color: #eee;
+  font-size: 18px;
+  background-color: #3f3f3f;
+}
+/*Screen After*/
+@media screen and (min-width: 992px) {
+  .menu{
+    font-size: 16px;
+  }
+  .menu-group{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .menu-item-image {
+    width: 140px;
+    height: 140px;
+  }
+  .card-container{
+    grid-template-columns: 100%;
+    width: 100vw;
+  }
+  .card-img{
+    height: 330px;
+  }
+}
+
+
+
+/*<div class="contact-section">
+            <div class="contact-info">
+                <div><i class="fa fa-fw fa-map-marker"></i>Hollywood, Los Angeles CA</div>
+                <div><i class="fa fa-fw fa-phone"></i>+6395-8563-7128</div>
+                <div><i class="fa fa-fw fa-clock-o"></i>Thu - Tue 10:00 AM to 8:00 PM</div>
+        </div>*/
